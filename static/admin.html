@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chatbot Admin</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="admin">
+  <header class="admin-head">
+    <div>
+      <h1>Chatbot admin</h1>
+      <p class="sub">Teach the bot what it couldn't answer, handle tickets and review conversations</p>
+    </div>
+    <a href="/" class="link">← Back to chat</a>
+  </header>
+
+  <section class="card">
+    <h2>Routing overview</h2>
+    <div id="stats" class="stats wide"></div>
+  </section>
+
+  <section class="card">
+    <h2>Intent classifier</h2>
+    <p class="muted">TF-IDF + Logistic Regression trained on the Bitext customer-support dataset plus our own examples. Retrain with <code>python -m app.intent_model</code>.</p>
+    <div id="model" class="model"></div>
+  </section>
+
+  <section class="card">
+    <h2>End-to-end evaluation</h2>
+    <p class="muted">Realistic customer questions with the expected way of answering each (<code>data/eval_set.csv</code>).</p>
+    <div id="evaluation" class="table-wrap"></div>
+  </section>
+
+  <section class="card">
+    <h2>Knowledge gaps</h2>
+    <p class="muted">Unanswered on-topic questions, grouped by meaning. Write the answer once and every phrasing in the group becomes a new FAQ.</p>
+    <div id="gaps"></div>
+  </section>
+
+  <div class="two-col">
+    <section class="card">
+      <h2>Support tickets</h2>
+      <ul id="tickets" class="list"></ul>
+    </section>
+    <section class="card">
+      <h2>Documents</h2>
+      <form id="upload-form" class="upload">
+        <input id="file" type="file" accept=".pdf,.txt,.md" required>
+        <button type="submit">Upload</button>
+      </form>
+      <p id="upload-status" class="muted"></p>
+      <ul id="docs" class="list"></ul>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>Recent conversations</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Time</th><th>User</th><th>Route</th><th>Conf.</th><th>Bot</th></tr></thead>
+        <tbody id="logs"></tbody>
+      </table>
+    </div>
+  </section>
+</div>
+<script src="/static/common.js"></script>
+<script src="/static/admin.js"></script>
+</body>
+</html>

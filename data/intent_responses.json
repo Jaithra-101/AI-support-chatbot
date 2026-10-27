@@ -1,0 +1,33 @@
+{
+  "_comment": "How each trained intent is handled. action = uses the order database, docs = answer from policy documents first (reply is the backup), template = fixed reply.",
+
+  "track_order":             {"handler": "action", "action": "track"},
+  "cancel_order":            {"handler": "action", "action": "cancel"},
+  "get_refund":              {"handler": "action", "action": "refund"},
+  "track_refund":            {"handler": "action", "action": "refund"},
+  "get_invoice":             {"handler": "action", "action": "invoice"},
+  "check_invoice":           {"handler": "action", "action": "invoice"},
+  "change_shipping_address": {"handler": "action", "action": "address"},
+
+  "check_refund_policy":     {"handler": "docs", "reply": "Most items can be returned within 30 days of delivery for a full refund. Sale items can be returned within 15 days for store credit."},
+  "delivery_period":         {"handler": "docs", "reply": "Standard delivery takes 4 to 6 business days and express delivery 1 to 2 business days in metro cities."},
+  "delivery_options":        {"handler": "docs", "reply": "We offer free standard shipping on orders above ₹499 (4–6 business days) and express shipping for ₹149 (1–2 business days in metro cities)."},
+  "check_payment_methods":   {"handler": "docs", "reply": "We accept credit and debit cards, UPI, net banking and cash on delivery (up to ₹10,000)."},
+  "check_cancellation_fee":  {"handler": "docs", "reply": "Cancelling is free any time before your order is dispatched."},
+
+  "payment_issue":           {"handler": "template", "offer_ticket": true, "reply": "Sorry about that. If money was deducted but the order failed, your bank reverses it automatically within 7 business days. If you were charged twice for one order, leave your email below and our payments team will check it."},
+  "complaint":               {"handler": "template", "offer_ticket": true, "reply": "I'm really sorry about your experience. I've flagged this for our customer care team. Leave your email below and a person will get back to you within 24 hours."},
+  "contact_human_agent":     {"handler": "template", "offer_ticket": true, "reply": "Sure, I'll connect you with a person. Leave your email below and an agent will reply within a few hours, or call 1800-123-4567 (Mon–Sat, 9 AM–8 PM)."},
+  "contact_customer_service":{"handler": "template", "reply": "You can reach ShopEase customer care at support@shopease.example or 1800-123-4567 (toll free), Monday to Saturday, 9 AM to 8 PM."},
+  "place_order":             {"handler": "template", "reply": "To place an order, browse shopease.example, add items to your cart and check out. Orders placed before 2 PM on a business day are dispatched the same day."},
+  "change_order":            {"handler": "template", "reply": "Items in an order can't be changed after it's placed. If it hasn't shipped yet, you can cancel it for free and place a new order. Tell me your order number and I'll check."},
+  "set_up_shipping_address": {"handler": "template", "reply": "Go to My Account › Addresses › Add new address. You can save several addresses and pick one at checkout."},
+  "create_account":          {"handler": "template", "reply": "Click Sign up at the top of shopease.example and enter your email or phone number. You'll get a one-time code to verify it."},
+  "delete_account":          {"handler": "template", "reply": "Go to My Account › Settings › Delete account. Your data is removed within 30 days. Open orders must be delivered or cancelled first."},
+  "edit_account":            {"handler": "template", "reply": "You can update your name, phone number and email under My Account › Profile."},
+  "recover_password":        {"handler": "template", "reply": "Click Log in › Forgot password and enter your email. We'll send a reset link that's valid for 30 minutes."},
+  "registration_problems":   {"handler": "template", "offer_ticket": true, "reply": "Sorry you're having trouble signing up. Check that the email or phone number isn't already registered, and that the verification code hasn't expired (10 minutes). Still stuck? Leave your email and we'll help."},
+  "switch_account":          {"handler": "template", "reply": "Log out from My Account › Log out, then log in with your other account's email or phone number."},
+  "newsletter_subscription": {"handler": "template", "reply": "You can subscribe or unsubscribe from our offers newsletter under My Account › Notifications."},
+  "review":                  {"handler": "template", "reply": "We'd love your feedback! Open My Account › Orders, choose the item and tap Write a review."}
+}

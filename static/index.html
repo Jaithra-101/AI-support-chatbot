@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support Chatbot</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="layout">
+  <main class="chat">
+    <header>
+      <h1>Support Assistant</h1>
+      <p class="sub">Instant FAQ answers · document answers with citations · learns from what it can't answer</p>
+    </header>
+    <div id="messages" class="messages" aria-live="polite"></div>
+    <form id="chat-form" class="composer">
+      <input id="input" autocomplete="off" placeholder="Ask about returns, shipping, warranty…" required>
+      <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <aside class="panel">
+    <section>
+      <h2>How this answer was found</h2>
+      <div id="stats" class="stats"></div>
+      <p class="muted"><a href="/admin" class="link">Open admin dashboard →</a></p>
+    </section>
+    <section>
+      <h2>Try asking</h2>
+      <h3>Orders</h3>
+      <ul class="list suggestions">
+        <li>Where's my order 10027?</li>
+        <li>I want to cancel my order</li>
+        <li>I want a refund for order 10031</li>
+        <li>Can I get the invoice for 10031?</li>
+      </ul>
+      <h3>Products</h3>
+      <ul class="list suggestions">
+        <li>How much are the wireless earbuds?</li>
+        <li>Do they come in white?</li>
+        <li>Can I swim with the smartwatch?</li>
+        <li>Earbuds vs headphones battery</li>
+        <li>Show me audio products under 3000</li>
+        <li>Does the bluetooth speaker support Alexa?</li>
+      </ul>
+      <h3>Help centre</h3>
+      <ul class="list suggestions">
+        <li>My product arrived damaged, what can I do?</li>
+        <li>How many days do I have to return an item?</li>
+        <li>Do you sell gift cards?</li>
+        <li>refnd polcy for sale itms</li>
+        <li>When do you shut?</li>
+      </ul>
+      <h3>Tricky ones</h3>
+      <ul class="list suggestions">
+        <li>My card was charged twice</li>
+        <li>Do you have a referral program?</li>
+        <li>Who won the cricket match?</li>
+        <li>This is useless!!!</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Demo orders</h2>
+      <p class="muted">Fake orders in the store database. Click one to track it.</p>
+      <ul id="orders" class="list orders suggestions"></ul>
+    </section>
+  </aside>
+</div>
+<script src="/static/common.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>

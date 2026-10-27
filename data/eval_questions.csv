@@ -1,0 +1,41 @@
+question,intent
+any update on where my stuff is,track_order
+tracking info for order 10027 please,track_order
+it's been a week and my delivery isn't here,track_order
+is order 10040 on the way,track_order
+cancel 10019,cancel_order
+i no longer need the order i placed yesterday,cancel_order
+can you cancel my purchase please,cancel_order
+i'd like a refund for the shoes i bought,get_refund
+the item broke can i get my money returned,get_refund
+any news on my refund,track_refund
+when does the refund reach my account,track_refund
+i need the invoice for tax purposes,get_invoice
+where can i download my bill,get_invoice
+i got charged two times,payment_issue
+my payment keeps failing,payment_issue
+what ways can i pay,check_payment_methods
+do you accept upi,check_payment_methods
+i'm really disappointed with this store,complaint
+i want to file a complaint,complaint
+let me speak with a human,contact_human_agent
+connect me to an agent,contact_human_agent
+how do i get in touch with customer support,contact_customer_service
+i can't remember my password,recover_password
+reset my login password,recover_password
+please remove my account,delete_account
+i want to close my account,delete_account
+how do i sign up,create_account
+update my phone number on my profile,edit_account
+i can't register it shows an error,registration_problems
+log me into my other account,switch_account
+change the address on order 10023,change_shipping_address
+how do i save a new address for future orders,set_up_shipping_address
+what delivery options do i have,delivery_options
+how long will shipping take,delivery_period
+are there charges if i cancel,check_cancellation_fee
+what's your refund policy,check_refund_policy
+i want to order a new phone,place_order
+add one more item to my existing order,change_order
+subscribe me to your emails,newsletter_subscription
+i want to leave feedback about my purchase,review

@@ -1,0 +1,66 @@
+[
+  {
+    "intent": "greeting",
+    "patterns": [
+      "hi",
+      "hello",
+      "hey",
+      "hey there",
+      "good morning",
+      "good evening",
+      "hi there"
+    ],
+    "answer": "Hello! 👋 How can I help you today? I can track, cancel or refund your orders, and answer questions about shipping, payments, returns and your account."
+  },
+  {
+    "intent": "goodbye",
+    "patterns": [
+      "bye",
+      "goodbye",
+      "see you",
+      "see you later",
+      "that's all",
+      "i'm done"
+    ],
+    "answer": "Thanks for chatting with ShopEase. Have a great day!"
+  },
+  {
+    "intent": "thanks",
+    "patterns": [
+      "thanks",
+      "thank you",
+      "thanks a lot",
+      "that helped",
+      "great, thanks",
+      "cheers"
+    ],
+    "answer": "You're welcome! Anything else I can help with?"
+  },
+  {
+    "intent": "opening_hours",
+    "patterns": [
+      "what are your opening hours",
+      "when are you open",
+      "store hours",
+      "what time do you open",
+      "what time do you close",
+      "are you open on sunday"
+    ],
+    "answer": "Our support team is available Monday to Saturday, 9 AM to 8 PM. Our online store is open 24/7."
+  },
+  {
+    "intent": "bot_identity",
+    "patterns": [
+      "who are you",
+      "are you a bot",
+      "what can you do",
+      "are you human",
+      "what are you",
+      "are you a real person",
+      "am i talking to a bot",
+      "is this a human",
+      "am i chatting with a person"
+    ],
+    "answer": "I'm the ShopEase support assistant. I can track, cancel and refund orders, send invoices, update delivery addresses, and answer policy questions with the source. Anything I can't answer goes to our team."
+  }
+]

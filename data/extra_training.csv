@@ -1,0 +1,74 @@
+instruction,intent
+where's my package,track_order
+wheres my parcel,track_order
+my parcel hasn't arrived yet,track_order
+my package still hasn't come,track_order
+has my order shipped yet,track_order
+when will my order arrive,track_order
+is my order out for delivery,track_order
+what's the status of order 10023,track_order
+order status please,track_order
+i haven't received my order,track_order
+can you check order 10031 for me,track_order
+please stop my order,cancel_order
+i don't want my order anymore,cancel_order
+stop order 10023,cancel_order
+i changed my mind about my purchase cancel it,cancel_order
+call off my order,cancel_order
+i ordered by mistake please cancel,cancel_order
+has my refund been processed,track_refund
+where is my refund for order 10012,track_refund
+i still haven't received my refund,track_refund
+refund status for my order,track_refund
+did you send my money back yet,track_refund
+i want to return my order and get a refund,get_refund
+return this item for a refund,get_refund
+the product is faulty i want my money back,get_refund
+i need a copy of my bill,get_invoice
+send me the bill for order 10023,get_invoice
+can i see my receipt,get_invoice
+show me the invoice for my last order,check_invoice
+my card was charged twice,payment_issue
+i was charged twice for one order,payment_issue
+money got deducted but order failed,payment_issue
+payment failed but amount was debited,payment_issue
+upi payment not going through,payment_issue
+your service is terrible,complaint
+i am very unhappy with your service,complaint
+the delivery guy was rude,complaint
+worst shopping experience ever,complaint
+this is unacceptable i want to complain,complaint
+the product i received is damaged and nobody helps,complaint
+deliver to a different address,change_shipping_address
+i moved please update the address on my order,change_shipping_address
+wrong address on order 10023,change_shipping_address
+send my order to my office instead,change_shipping_address
+i want to buy a laptop,place_order
+how do i order something,place_order
+i'd like to purchase a phone,place_order
+can i add another item to my order,change_order
+swap the colour of the item in my order,change_order
+how fast can you deliver,delivery_period
+how many days for delivery to bangalore,delivery_period
+do you have same day delivery,delivery_options
+what shipping methods do you have,delivery_options
+which payment methods do you accept,check_payment_methods
+can i pay cash on delivery,check_payment_methods
+do you take credit cards,check_payment_methods
+is there a fee to cancel,check_cancellation_fee
+what is your return policy,check_refund_policy
+how long do i have to return something,check_refund_policy
+can i return sale items,check_refund_policy
+i want a refund for order 10031,get_refund
+refund order 10031,get_refund
+10031 refund please,get_refund
+return order 10031,get_refund
+i want to return 10031,get_refund
+please return my order 10027 and refund me,get_refund
+i want to send back order 10031,get_refund
+refund my order,get_refund
+how many days to return an item,check_refund_policy
+how many days do i have to return something,check_refund_policy
+what is the return window,check_refund_policy
+how long is the return period,check_refund_policy
+until when can i send an item back,check_refund_policy
